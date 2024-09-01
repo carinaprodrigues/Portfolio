@@ -1,0 +1,112 @@
+*{ /*Edição em toda a página*/
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+p{ /*Editar os parágrafos*/
+    margin-top: 30px;
+    color: rgb(51, 45, 45);
+    margin: 20px 50px;
+}
+
+/*Navbar - as opões do menu*/
+.navbar-container {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(235, 105, 148); /*coloca um fundo na cor do menu*/
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.navbar-items {
+    display: flex; /* Flexbox para centralizar os itens */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+
+.navbar-items li {
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover { /*quando passar o mouse por cima do menu, muda de cor*/
+    color: #ccc;
+}
+
+.quem-sou, .formacao, .contato{
+    margin-top: 30px;
+    color: rgb(235, 105, 148);
+    text-align: center;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+img{
+    margin-top: 40px;
+    height: 500px;
+    width: 400px;
+}
+
+.formacao h4 {
+    color: #212130;
+    background-color: #f2f2fab0;
+    padding: 5px 10px;
+    border-bottom: 3px solid;
+    border-color: #212130;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    width: 80%; /* Define a largura como porcentagem */
+    max-width: 1000px; /* Define um limite máximo de largura */
+    margin: 35px auto 12px auto; /* Aplica as margens*/
+    display: block; /* Garante que o margin-top funcione */
+}
+
+
+
+/*Formulário de Contato*/
+.contato h2{
+    margin-bottom: 50px;
+}
+
+/*configura as áreas dos textos*/
+.contato input, 
+.contato textarea{
+    width: 200px;
+    padding: 10px 20px ;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contato textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+/*Configura o botão de enviar*/
+.contato input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(40, 117, 153);
+    color: #f1e9e9;
+    cursor: pointer;
+}
+
+/*Quando passa o mouse em cima do botão, muda de cor a letra*/
+.contato input:hover{
+    color: #ccc;
+}
